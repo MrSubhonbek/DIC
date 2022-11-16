@@ -45,7 +45,7 @@ export const Currencies = () => {
         <>
           <List.Item>
             <Typography.Text>
-              {(data.rates as any)[item] / rate}
+              {(data.rates as any)[item] * rate} {currency}
             </Typography.Text>
             <div>{(nameData.symbols as any)[item]}</div>
           </List.Item>
