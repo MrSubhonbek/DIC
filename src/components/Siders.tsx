@@ -23,7 +23,7 @@ export const Siders = () => {
       />
       <Menu
         theme="dark"
-        defaultSelectedKeys={["/"]}
+        defaultSelectedKeys={["/currencies"]}
         mode="inline"
         onClick={({ key }) => {
           if (key === "/currencies") navigate("/currencies");
