@@ -5,9 +5,9 @@ import { useFetchAllConverterQuery } from "../store/services/ConverterService";
 export const Converter = () => {
   const { data, isLoading } = useFetchAllConverterQuery();
   const [amountFirst, setAmountFirst] = useState(1);
-  const [currencyFirst, setCurrencyFirst] = useState("RUB");
+  const [currencyFirst, setCurrencyFirst] = useState("EUR");
   const [amountSecond, setAmountSecond] = useState<number>(1);
-  const [currencySecond, setCurrencySecond] = useState("RUB");
+  const [currencySecond, setCurrencySecond] = useState("EUR");
 
   if (isLoading) return <h1>Loading...</h1>;
   if (!data) return <h1>Empty data</h1>;

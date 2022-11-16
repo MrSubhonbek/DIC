@@ -22,7 +22,6 @@ export const CurrencyInput: FC<IProps> = ({
     if (!event) return 0;
     onAmountChange(event.valueOf());
   };
-  console.log(amount);
 
   const handleChangeCurrency = (event: string) => {
     if (!event) return "";
